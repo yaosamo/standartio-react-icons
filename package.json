@@ -4,6 +4,7 @@
   "files": [
     "icons/"
   ],
+  "main": "./dist/icons/index.js",
   "scripts": {
     "clean": "rimraf dist",
     "export": "figma-export use-config figma.config.js",

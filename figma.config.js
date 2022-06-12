@@ -14,7 +14,7 @@ const svgoConfig = {
     {
       name: "removeAttrs",
       params: {
-        attrs: ["fill"],
+        attrs: ["stroke"],
       },
     },
     {
@@ -22,7 +22,7 @@ const svgoConfig = {
       params: {
         attributes: [
           {
-            fill: "currentColor",
+            stroke: "currentColor",
           },
         ],
       },
