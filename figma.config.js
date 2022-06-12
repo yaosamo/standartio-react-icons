@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const outputComponentsAsSvgr = require("@figma-export/output-components-as-svgr");
-const svgo = require("@figma-export/transform-svg-with-svgo");
+const transformSvgWithSvgo = require("@figma-export/transform-svg-with-svgo");
 
 const fileId = process.env.FIGMA_FILE_ID;
 const pageName = process.env.FIGMA_PAGE_NAME;
@@ -14,7 +14,7 @@ const svgoConfig = {
     {
       name: "removeAttrs",
       params: {
-        attrs: "fill",
+        attrs: ["fill"],
       },
     },
     {
@@ -43,10 +43,13 @@ module.exports = {
       {
         fileId,
         onlyFromPages: [pageName],
-        transformers: [svgo(svgoConfig)],
+        transformers: [transformSvgWithSvgo(svgoConfig)],
         outputters: [
           outputComponentsAsSvgr({
             output: "./dist",
+            getSvgrConfig: () => ({
+              jsxRuntime: "automatic",
+            }),
           }),
         ],
       },

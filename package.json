@@ -1,6 +1,9 @@
 {
   "name": "standartio-react-icons",
   "version": "1.0.0",
+  "files": [
+    "icons/"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "export": "figma-export use-config figma.config.js",
