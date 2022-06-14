@@ -1,0 +1,3 @@
+const Trash = props => <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}><path fill="#fff" d="M0 0h24v24H0z" /><path fill="#000" d="M16.25 9v8h1.5V9h-1.5ZM15 18.25H9v1.5h6v-1.5ZM7.75 17V9h-1.5v8h1.5ZM9 18.25c-.69 0-1.25-.56-1.25-1.25h-1.5A2.75 2.75 0 0 0 9 19.75v-1.5ZM16.25 17c0 .69-.56 1.25-1.25 1.25v1.5A2.75 2.75 0 0 0 17.75 17h-1.5Z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5.5 7h4m9 0h-4m-5 0 .5-2h4l.5 2m-5 0h5" /></svg>;
+
+export default Trash;
