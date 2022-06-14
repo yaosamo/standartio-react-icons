@@ -1,8 +1,8 @@
 name: Build icons
 
 on:
-  # Triggers the workflow on pull request events but only for the "main" branch
-  pull_request:
+  # Triggers the workflow on push events but only for the "main" branch
+  push:
     branches: ["main"]
 
 env:
@@ -28,5 +28,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "Export icons."
+          git commit -m "[github-actions] Export icons."
           git push
