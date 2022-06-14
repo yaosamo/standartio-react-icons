@@ -4,6 +4,10 @@ on:
   # Triggers the workflow on pull request events but only for the "main" branch
   pull_request:
     branches: ["main"]
+
+env:
+  FIGMA_PAGE_NAME: icons
+
 jobs:
   build:
     runs-on: ubuntu-latest
