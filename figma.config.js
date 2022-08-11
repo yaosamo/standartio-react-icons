@@ -46,9 +46,13 @@ module.exports = {
         transformers: [transformSvgWithSvgo(svgoConfig)],
         outputters: [
           outputComponentsAsSvgr({
-            output: "./dist",
+            getDirname: () => "src",
+            getFileExtension: () => ".tsx",
+            output: "./",
             getSvgrConfig: () => ({
-              jsxRuntime: "automatic",
+              index: false,
+              jsxRuntime: "classic",
+              typescript: true,
             }),
           }),
         ],
