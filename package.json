@@ -5,7 +5,6 @@
     "dist/"
   ],
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rimraf src dist",
     "export": "figma-export use-config figma.config.js",
