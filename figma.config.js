@@ -51,7 +51,6 @@ module.exports = {
             output: "./",
             getSvgrConfig: () => ({
               index: false,
-              jsxRuntime: "classic",
               typescript: true,
             }),
           }),

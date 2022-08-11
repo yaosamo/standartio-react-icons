@@ -3,6 +3,7 @@
   "compilerOptions": {
     "allowJs": true,
     "declaration": true,
+    "jsx": "react-jsx",
     "module": "ESNext",
     "outDir": "dist/"
   }
