@@ -22,4 +22,5 @@ node_modules/
 .env.production.local
 .env.local
 
-icons/
+src
+test
