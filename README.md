@@ -34,8 +34,3 @@ export const MyComponent = () => {
   );
 };
 ```
-
-## Contributors
-
-<img src="https://avatars.githubusercontent.com/u/5090118?v=4" alt="@yaosamo" width="75" style="border-radius: 50%;margin-right: 8px;" />
-<img src="https://avatars.githubusercontent.com/u/5573091?v=4" alt="@soulprovidr" width="75" style="border-radius: 50%" />
