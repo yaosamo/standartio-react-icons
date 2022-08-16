@@ -1,4 +1,5 @@
 import dts from "rollup-plugin-dts";
+import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2";
 
 export default [
@@ -14,6 +15,7 @@ export default [
       typescript({
         useTsconfigDeclarationDir: true,
       }),
+      terser(),
     ],
   },
   {
